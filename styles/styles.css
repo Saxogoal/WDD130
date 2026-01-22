@@ -1,18 +1,15 @@
 main {
-    max-width: 840
+    max-width: 840px;
 }
 
 :root {
     --main-color: #3498db;
-    /* Example color */
-    --secondary-color: #000;
-    /* Example color */
-    --text-color: #333;
+    --secondary-color: #000000;
+    --text-color: #333333;
     --background-color: #f4f4f4;
 }
 
 header {
-
     text-align: left;
     padding: 20px;
 }
@@ -27,21 +24,17 @@ nav a {
     padding: 10px;
     display: block;
     font-size: 25px;
-
 }
 
 h1 {
     color: var(--main-color);
-    /* Change as necessary */
     font-size: 2rem;
-    /* Adjust font size */
 }
 
 main img {
-
     width: 150px;
     height: auto;
-    border: 1px solid --main-color;
+    border: 1px solid var(--main-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -56,7 +49,7 @@ aside {
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1em;
     background-color: var(--background-color);
-    color: #333;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -67,6 +60,6 @@ aside img {
 
 footer {
     margin-top: 1em;
-    border-top: 1px solid #000;
+    border-top: 1px solid #000000;
     text-align: center;
 }
