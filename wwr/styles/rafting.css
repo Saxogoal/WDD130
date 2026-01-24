@@ -6,7 +6,8 @@
 
 :root {
   --primary-color: #1f5fa8;
-  --accent-color: #2ecc71;
+  --accent-color: #1e8449;
+  /* Darkened for contrast */
   --text-color: #333333;
   --background-color: #f4f4f4;
 }
@@ -31,7 +32,6 @@ header {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  /* REQUIRED */
   color: var(--primary-color);
   font-weight: bold;
 }
@@ -42,13 +42,11 @@ nav a:hover {
 
 .socialmedia a {
   text-decoration: none;
-  /* REQUIRED */
   margin: 0 10px;
 }
 
 .hero {
   position: relative;
-  /* REQUIRED */
 }
 
 .hero img {
@@ -58,28 +56,27 @@ nav a:hover {
 
 .hero h1 {
   position: absolute;
-  /* REQUIRED */
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  /* Contrast fix */
 }
 
 .hero article {
   position: absolute;
-  /* REQUIRED */
   bottom: 10%;
   left: 10%;
   background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  color: #ffffff;
   padding: 20px;
   width: 70%;
 }
 
 .hero article img {
   float: right;
-  /* REQUIRED */
   width: 120px;
   margin-left: 15px;
 }
@@ -94,6 +91,7 @@ section {
 
 h2 {
   color: var(--accent-color);
+  /* WCAG safe */
   margin-bottom: 10px;
 }
 
